@@ -1,0 +1,68 @@
+/* Apply font styling properties. */
+* {
+    font-family: Merriweather;
+    font-size: 18px;
+    color: #FFCB05;
+}
+
+/* Style the skip to main element */
+.skip-to-main {
+    background-color: #00274C;
+    position: absolute;
+    top: -40px;
+}
+
+.skip-to-main:focus {
+    top: 0px;
+}
+
+/* Style the UMSI Logo */
+.UMSI-logo {
+    max-width: 20vw;
+}
+
+/* Apply body styling properties. */
+body {
+    background-color: white;
+}
+
+/* Set up flex-box container for navigation elements. */
+.navigation-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #00274C;
+}
+
+.navigation-bar li {
+    padding: 1vw 1vw 1vw 1vw;
+    font-size: 22px;
+}
+
+/* Format the header elements. */
+h1 {
+    background-color: #00274C;
+    text-align: center;
+    font-size: 22px;
+    height: 40px;
+}
+
+h2 {
+    background-color: #00274C;
+    text-align: center;
+    height: 40px;
+}
+
+/* Format the paragraph element. */
+
+p {
+    background-color: #FFCB05;
+    color: #00274C;
+    height: 40px;
+}
+
+/* Format the footer element. */
+.footer {
+    background-color: #FFCB05;
+    color: #00274C;
+}
