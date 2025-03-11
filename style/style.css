@@ -30,18 +30,13 @@ html {
 
 /* Apply body styling properties. */
 body {
-    /* 
-        Background + box-shadow idea from: 
-        https://stackoverflow.com/questions/9182978/semi-transparent-color-layer-over-background-image 
-    */
     background: url("../images/UMSI_campus.jpg");
-    box-shadow: inset 0 0 0 1000px #00274C65;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: center;
-    height: 100%;
+    padding-bottom: 15vw;
+    height: fit-content;
 }
-
 
 /* Set up flex-box container for navigation elements. */
 .navigation-bar {
@@ -86,6 +81,17 @@ h3 {
     line-height: 1.25;
 }
 
+/* Style the grid elements. */
+.grid-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-display a {
+    color: #00274C;
+    font-size: 18px;
+}
+
 /* Format the paragraph elements. */
 section p, div p {
     background-color: #FFCB05;
@@ -99,6 +105,28 @@ section p, div p {
 
 p a {
     color: #00274C;
+}
+
+/* Format list elements. */
+.bulleted-list {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.bulleted-list-background {
+    background-color: #FFCB05;
+    color: #00274C;
+    font-size: 16px;
+    padding: 15px 10px 15px 10px;
+    margin: 10px 5px 10px 5px;
+    height: fit-content;
+    line-height: 1.25;
+}
+
+.bulleted-list li {
+    color: #00274C;
+    list-style-type: disc;
+    margin-left: 20px;
 }
 
 /* Format the footer element. */
