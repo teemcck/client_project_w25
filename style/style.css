@@ -9,7 +9,10 @@ html {
 * {
     font-family: Merriweather;
     font-size: 18px;
-    color: #FFCB05;
+}
+
+body {
+    color: #FFCB05; /* Apply the color to the body instead */
 }
 
 /* Style the skip to main element */
@@ -53,8 +56,20 @@ body {
     padding: 0 10px 0px 10px;
 }
 
+.navigation-bar li a {
+    color: #FFCB05;
+}
+
 .navigation-bar:nth-child(1) {
     padding: 5px 0px 0px 5px;
+}
+
+.navigation-bar li.active {
+    background-color: #FFCB05;
+}
+
+.navigation-bar li.active a {
+    color: #00274C;
 }
 
 /* Format the header elements. */
