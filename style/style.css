@@ -15,17 +15,6 @@ body {
     color: #FFCB05; /* Apply the color to the body instead */
 }
 
-/* Style the skip to main element */
-.skip-to-main {
-    background-color: #00274C;
-    position: absolute;
-    top: -40px;
-}
-
-.skip-to-main:focus {
-    top: 0px;
-}
-
 /* Style the UMSI Logo */
 .UMSI-logo {
     width: 20vw;
@@ -168,4 +157,16 @@ footer p a {
     text-align: center;
     font-size: 18px;
     padding: 10px 0px 10px 0px;
+}
+
+/* Style the skip to main element */
+.skip-to-main {
+    background-color: #00274C;
+    color: #FFCB05;
+    position: absolute;
+    top: -80px;
+}
+
+.skip-to-main:focus {
+    top: 0px;
 }
