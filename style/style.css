@@ -22,7 +22,9 @@ body {
 
 /* Apply body styling properties. */
 body {
-    background: url("../images/UMSI_campus.jpg");
+    background-image: 
+    linear-gradient( rgba(200,100,0,.25), rgba(200,100,0,.25) ), 
+    url("../images/UMSI_campus.jpg");
     background-size: cover;
     background-repeat: repeat;
     background-position: center;
@@ -42,7 +44,6 @@ body {
 .navigation-bar li {
     text-align: center;
     font-size: 16px;
-    padding: 0 10px 0px 10px;
 }
 
 .navigation-bar li a {
@@ -50,11 +51,15 @@ body {
 }
 
 .navigation-bar:nth-child(1) {
-    padding: 5px 0px 0px 5px;
+    padding: 5px 0px 0px 0px;
 }
 
 .navigation-bar li.active {
     background-color: #FFCB05;
+    padding: 4px;
+    margin: 4px;
+    border-radius: 8px; /* Add rounded corners for a cleaner look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
 }
 
 .navigation-bar li.active a {
@@ -84,12 +89,25 @@ h3 {
     margin: 10px 5px 10px 5px;
     height: fit-content;
     line-height: 1.25;
+    border-radius: 8px; /* Add rounded corners for a cleaner look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
 }
 
 /* Style the grid elements. */
 .grid-display {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px; /* Add space between grid items */
+    padding: 10px 5px 10px 5px;
+}
+
+.grid-display > h3 {
+    background-color: #FFCB05;
+    color: #00274C;
+    text-align: center;
+    margin: 0;
+    border-radius: 8px; /* Add rounded corners for a cleaner look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
 }
 
 .grid-display a {
@@ -106,10 +124,17 @@ section p, div p {
     margin: 10px 5px 10px 5px;
     height: fit-content;
     line-height: 1.25;
+    border-radius: 8px; /* Add rounded corners for a cleaner look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
 }
 
 p a {
     color: #00274C;
+}
+
+.description-pg {
+    border-radius: 8px; /* Add rounded corners for a cleaner look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
 }
 
 /* Format list elements. */
@@ -126,6 +151,8 @@ p a {
     margin: 10px 5px 10px 5px;
     height: fit-content;
     line-height: 1.25;
+    border-radius: 8px; /* Add rounded corners for a cleaner look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
 }
 
 .bulleted-list li {
@@ -169,4 +196,69 @@ footer p a {
 
 .skip-to-main:focus {
     top: 0px;
+}
+
+/* Desktop view */
+@media only screen and (min-width: 750px) {
+    /* Style the UMSI Logo */
+    .UMSI-logo {
+        width: 10vw;
+        margin: auto;
+    }
+
+    /* Update the navigation bar. */
+    .navigation-bar {
+        flex-direction: column;
+        width: 12vw;
+        height: 50vw;
+        position: fixed;
+        padding: 20px;
+    }
+
+    .nav-container {
+        background-color: #00274C;
+        position: fixed;
+        height: 100vw;
+        width: 12vw;
+    }
+
+    /* Move main to align properly to right of navigation. */
+    main {
+        margin-left: 15vw;
+        padding: 20px;
+        width: 80vw;
+    }
+
+    /* Update font/whitespace sizing */
+    h1 {
+        font-size: 28px;
+    }
+    
+    h2, h3, .navigation-bar li, p, footer p, footer p a {
+        font-size: 26px;
+    }
+
+    section p, div p {
+        font-size: 24px;
+    }
+
+    section {
+        margin: auto;
+        width: 80%;
+    }
+
+    /* Style the grid elements. */
+    .grid-display {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px; /* Space between grid items */
+    }
+
+    .grid-display > h3 {
+        height: fit-content;
+    }
+    
+    .section {
+        background-color: #00274C;
+    }
 }
