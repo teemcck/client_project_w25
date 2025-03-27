@@ -1,6 +1,7 @@
 /* Ensure HTML container is properly formatted */
 html {
     height: 100%;
+    font-size: 100%;
     margin: 0;
     padding: 0;
 }
@@ -8,7 +9,7 @@ html {
 /* Apply font styling properties. */
 * {
     font-family: Merriweather;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 body {
@@ -43,7 +44,7 @@ body {
 
 .navigation-bar li {
     text-align: center;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .navigation-bar li a {
@@ -51,15 +52,15 @@ body {
 }
 
 .navigation-bar:nth-child(1) {
-    padding: 5px 0px 0px 0px;
+    padding: 0.3125rem 0 0 0;
 }
 
 .navigation-bar li.active {
     background-color: #FFCB05;
-    padding: 4px;
-    margin: 4px;
-    border-radius: 8px; /* Add rounded corners for a cleaner look */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    padding: 0.25rem;
+    margin: 0.25rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.3);
 }
 
 .navigation-bar li.active a {
@@ -70,35 +71,35 @@ body {
 h1 {
     background-color: #00274C;
     text-align: center;
-    font-size: 22px;
-    padding: 20px 0px 10px 0px;
+    font-size: 1.375rem;
+    padding: 1.25rem 0 0.625rem 0;
 }
 
 h2 {
     background-color: #00274C;
     text-align: center;
-    font-size: 16px;
-    padding: 10px 10px 20px 10px;
+    font-size: 1rem;
+    padding: 0.625rem;
 }
 
 h3 {
     background-color: #FFCB05;
     color: #00274C;
     text-align: center;
-    padding: 15px 20px 15px 10px;
-    margin: 10px 5px 10px 5px;
+    padding: 0.9375rem;
+    margin: 0.625rem 0.3125rem;
     height: fit-content;
     line-height: 1.25;
-    border-radius: 8px; /* Add rounded corners for a cleaner look */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    border-radius: 0.5rem; 
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.3);
 }
 
 /* Style the grid elements. */
 .grid-display {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px; /* Add space between grid items */
-    padding: 10px 5px 10px 5px;
+    gap: 1.25rem;
+    padding: 0.625rem 0.3125rem;
 }
 
 .grid-display > h3 {
@@ -106,26 +107,26 @@ h3 {
     color: #00274C;
     text-align: center;
     margin: 0;
-    border-radius: 8px; /* Add rounded corners for a cleaner look */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.3);
 }
 
 .grid-display a {
     color: #00274C;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 /* Format the paragraph elements. */
 section p, div p {
     background-color: #FFCB05;
     color: #00274C;
-    font-size: 16px;
-    padding: 15px 10px 15px 10px;
-    margin: 10px 5px 10px 5px;
+    font-size: 1rem;
+    padding: 0.9375rem 0.625rem;
+    margin: 0.625rem 0.3125rem;
     height: fit-content;
     line-height: 1.25;
-    border-radius: 8px; /* Add rounded corners for a cleaner look */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.3);
 }
 
 p a {
@@ -133,32 +134,32 @@ p a {
 }
 
 .description-pg {
-    border-radius: 8px; /* Add rounded corners for a cleaner look */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.3);
 }
 
 /* Format list elements. */
 .bulleted-list {
     list-style-type: disc;
-    margin-left: 20px;
+    margin-left: 1.25rem;
 }
 
 .bulleted-list-background {
     background-color: #FFCB05;
     color: #00274C;
-    font-size: 16px;
-    padding: 15px 10px 15px 10px;
-    margin: 10px 5px 10px 5px;
+    font-size: 1rem;
+    padding: 0.9375rem 0.625rem;
+    margin: 0.625rem 0.3125rem;
     height: fit-content;
     line-height: 1.25;
-    border-radius: 8px; /* Add rounded corners for a cleaner look */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.3);
 }
 
 .bulleted-list li {
     color: #00274C;
     list-style-type: disc;
-    margin-left: 20px;
+    margin-left: 1.25rem;
 }
 
 /* Format the footer element. */
@@ -175,15 +176,15 @@ footer {
 footer p {
     color: #00274C;
     text-align: center;
-    font-size: 18px;
-    padding: 10px 0px 10px 0px;
+    font-size: 1.125rem;
+    padding: 0.625rem 0;
 }
 
 footer p a {
     color: #00274C;
     text-align: center;
-    font-size: 18px;
-    padding: 10px 0px 10px 0px;
+    font-size: 1.125rem;
+    padding: 0.625rem 0;
 }
 
 /* Style the skip to main element */
@@ -191,74 +192,84 @@ footer p a {
     background-color: #00274C;
     color: #FFCB05;
     position: absolute;
-    top: -80px;
+    top: -5rem;
 }
 
 .skip-to-main:focus {
-    top: 0px;
+    top: 0;
 }
 
 /* Desktop view */
 @media only screen and (min-width: 750px) {
     /* Style the UMSI Logo */
     .UMSI-logo {
-        width: 10vw;
+        width: 6.25rem;
         margin: auto;
     }
 
     /* Update the navigation bar. */
     .navigation-bar {
         flex-direction: column;
-        width: 12vw;
-        height: 50vw;
+        width: 8.75rem;
+        height: 50%;
         position: fixed;
-        padding: 20px;
+        padding: 1.25rem;
     }
 
     .nav-container {
         background-color: #00274C;
         position: fixed;
-        height: 100vw;
-        width: 12vw;
+        height: 100%;
+        width: 8.75rem;
+        z-index: 1;
     }
 
     /* Move main to align properly to right of navigation. */
     main {
-        margin-left: 15vw;
-        padding: 20px;
-        width: 80vw;
+        margin-left: 8.75rem;
     }
 
     /* Update font/whitespace sizing */
-    h1 {
-        font-size: 28px;
+    h1, h2, h3 {
+        font-size: 2.125rem; 
     }
     
-    h2, h3, .navigation-bar li, p, footer p, footer p a {
-        font-size: 26px;
+    .navigation-bar li, p, footer p, footer p a {
+        font-size: 1.625rem;
     }
 
     section p, div p {
-        font-size: 24px;
+        font-size: 1.875rem;
+        padding: 1.25rem;
     }
 
     section {
         margin: auto;
-        width: 80%;
+        width: 95%;
+    }
+    
+    footer {
+        margin-left: 4rem;
     }
 
     /* Style the grid elements. */
     .grid-display {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 20px; /* Space between grid items */
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.25rem;
     }
 
     .grid-display > h3 {
         height: fit-content;
     }
-    
-    .section {
-        background-color: #00274C;
+
+    .grid-display > h3 > a {
+        font-size: 1.5rem;
+        line-height: 1;
+    }
+
+    /* Style the list items. */
+    ul > li {
+        font-size: 1.5rem;
     }
 }
