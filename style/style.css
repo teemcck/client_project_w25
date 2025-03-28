@@ -24,14 +24,60 @@ body {
 /* Apply body styling properties. */
 body {
     background-image: 
-    linear-gradient( rgba(200,100,0,.25), rgba(200,100,0,.25) ), 
+    linear-gradient( rgba(200,100,0,.15), rgba(200,100,0,.15) ), 
     url("../images/UMSI_campus.jpg");
     background-size: cover;
     background-repeat: repeat;
     background-position: center;
     padding-bottom: 15vw;
-    height: fit-content;
-    width: fit-content;
+}
+
+/* Style for the 404 error page */
+body.error-page {
+    background-image: none; /* Remove background image */
+    background-color: #00274C; /* Solid background color */
+}
+
+/* Centered content for the 404 page */
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 24rem); /* Full height minus footer height */
+    box-sizing: border-box;
+    float: none; /* Override float: right */
+}
+
+.error-container {
+    text-align: center;
+    color: #FFCB05;
+    margin-top: 10vh;
+    padding: 1rem; /* Add padding for smaller screens */
+}
+
+.error-container h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.error-container p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.error-container a {
+    color: #FFCB05;
+    text-decoration: none;
+    font-size: 1.25rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid #FFCB05;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.error-container a:hover {
+    background-color: #FFCB05;
+    color: #00274C;
 }
 
 /* Set up flex-box container for navigation elements. */
@@ -214,21 +260,29 @@ footer p a {
         height: 50%;
         position: fixed;
         padding: 1.25rem;
+        overflow: hidden; /* Hide the links */
+        transition: width 0.3s ease; /* Smooth transition */
+    }
+
+    .navigation-bar.expanded {
+        width: 14rem;
     }
 
     .nav-container {
+        display: block;
         background-color: #00274C;
         position: fixed;
         height: 100%;
         width: 8.75rem;
-        z-index: 1;
+        z-index: 0;
+        transition: width 0.3s ease; /* Smooth transition */
+        box-shadow: 0 0.5rem 0.7rem rgba(0, 0, 0, 0.3);
     }
 
-    /* Move main to align properly to right of navigation. */
-    main {
-        margin-left: 8.75rem;
+    .nav-container.expanded {
+        width: 14rem;
     }
-
+ 
     /* Update font/whitespace sizing */
     h1, h2, h3 {
         font-size: 2.125rem; 
@@ -245,11 +299,12 @@ footer p a {
 
     section {
         margin: auto;
-        width: 95%;
+        width: 85%;
     }
-    
-    footer {
-        margin-left: 4rem;
+
+    .content {
+        padding-left: 8.75rem;
+        float: right;
     }
 
     /* Style the grid elements. */
@@ -271,5 +326,30 @@ footer p a {
     /* Style the list items. */
     ul > li {
         font-size: 1.5rem;
+    }
+
+    /* Error 404 page */
+    .error-container h1 {
+        font-size: 5rem; /* Scale up heading for desktop */
+    }
+
+    .error-container p {
+        font-size: 2rem; /* Scale up paragraph text for desktop */
+    }
+
+    .error-container a {
+        font-size: 1.5rem; /* Scale up link text for desktop */
+        padding: 1rem 2rem; /* Increase padding for desktop */
+    }
+}
+
+/* Ensure the navigation bar is always expanded for users with reduced motion */
+@media only screen and (min-width: 750px) and (prefers-reduced-motion: reduce) {
+    .nav-container {
+        width: 14rem; /* Always expanded width */
+    }
+
+    .navigation-bar {
+        width: 14rem; /* Always expanded width */
     }
 }
